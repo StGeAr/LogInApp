@@ -16,6 +16,7 @@
 		DED7D95327DBC59D00E397D8 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED7D95227DBC59D00E397D8 /* WelcomeViewController.swift */; };
 		DED7D95527DBC71700E397D8 /* PersonalInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED7D95427DBC71700E397D8 /* PersonalInfoViewController.swift */; };
 		DED7D95727DBC86500E397D8 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED7D95627DBC86500E397D8 /* PhotoViewController.swift */; };
+		DED7D95B27DBCA7500E397D8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED7D95A27DBCA7500E397D8 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		DED7D95227DBC59D00E397D8 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		DED7D95427DBC71700E397D8 /* PersonalInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfoViewController.swift; sourceTree = "<group>"; };
 		DED7D95627DBC86500E397D8 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		DED7D95A27DBCA7500E397D8 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +64,9 @@
 		DED7D93D27DBC20900E397D8 /* LogInApp */ = {
 			isa = PBXGroup;
 			children = (
+				DED7D95927DBC89400E397D8 /* Storyboards */,
 				DED7D95827DBC87000E397D8 /* ViewControllers */,
+				DED7D95A27DBCA7500E397D8 /* User.swift */,
 				DED7D93E27DBC20900E397D8 /* AppDelegate.swift */,
 				DED7D94027DBC20900E397D8 /* SceneDelegate.swift */,
 				DED7D94727DBC20A00E397D8 /* Assets.xcassets */,
@@ -78,7 +82,6 @@
 				DED7D95227DBC59D00E397D8 /* WelcomeViewController.swift */,
 				DED7D95427DBC71700E397D8 /* PersonalInfoViewController.swift */,
 				DED7D95627DBC86500E397D8 /* PhotoViewController.swift */,
-				DED7D95927DBC89400E397D8 /* Storyboards */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 			files = (
 				DED7D94327DBC20900E397D8 /* LoginViewController.swift in Sources */,
 				DED7D95327DBC59D00E397D8 /* WelcomeViewController.swift in Sources */,
+				DED7D95B27DBCA7500E397D8 /* User.swift in Sources */,
 				DED7D95527DBC71700E397D8 /* PersonalInfoViewController.swift in Sources */,
 				DED7D93F27DBC20900E397D8 /* AppDelegate.swift in Sources */,
 				DED7D94127DBC20900E397D8 /* SceneDelegate.swift in Sources */,

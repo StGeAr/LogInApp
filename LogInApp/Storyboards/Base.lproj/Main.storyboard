@@ -45,6 +45,9 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Log In"/>
+                                        <connections>
+                                            <action selector="loginButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="WZI-yI-sKh"/>
+                                        </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Ixy-Cr-rht">
                                         <rect key="frame" x="8.5" y="149" width="271" height="30"/>
@@ -53,11 +56,17 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="133" height="30"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="Forgot User Name?"/>
+                                                <connections>
+                                                    <action selector="showAuthorizationData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u7O-IT-paH"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jyP-Bm-kur">
                                                 <rect key="frame" x="148" y="0.0" width="123" height="30"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="Forgot Password?"/>
+                                                <connections>
+                                                    <action selector="showAuthorizationData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xQ6-rC-NB5"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -77,6 +86,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="passwordField" destination="yTB-dr-6Ce" id="m8V-tF-Fp2"/>
+                        <outlet property="userNameField" destination="M1L-Mv-BYw" id="k5F-so-lQ0"/>
                         <segue destination="5nF-Ad-yor" kind="presentation" identifier="logIn" modalPresentationStyle="fullScreen" id="MBS-mE-fD0"/>
                     </connections>
                 </viewController>
@@ -117,6 +128,9 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Log Out"/>
+                                        <connections>
+                                            <segue destination="Sck-Jd-C3E" kind="unwind" unwindAction="unwindFor:" id="z7q-aF-G7a"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -130,8 +144,12 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="ngr-QG-kT7"/>
+                    <connections>
+                        <outlet property="welcomeMessageTF" destination="3Nm-Y2-NNx" id="DgB-ob-k2C"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hFw-rH-VL1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Sck-Jd-C3E" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="474" y="881"/>
         </scene>
@@ -249,6 +267,13 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="ageTF" destination="gV7-LF-oGb" id="N6Z-F5-wKG"/>
+                        <outlet property="cityTF" destination="LbH-Gr-p9b" id="3hd-8p-Anz"/>
+                        <outlet property="nameTF" destination="AcM-7I-Cxc" id="EHu-RH-aEN"/>
+                        <outlet property="personalInformationTF" destination="5mF-b4-HpX" id="oJk-44-Fa5"/>
+                        <outlet property="surnameTF" destination="tgT-lc-dSj" id="eFk-Qx-hll"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="twu-px-atI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
