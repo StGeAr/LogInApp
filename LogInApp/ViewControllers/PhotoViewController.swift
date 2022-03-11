@@ -20,5 +20,4 @@ class PhotoViewController: UIViewController {
         super.viewDidLoad()
         photoView.image = photo
     }
-
 }
