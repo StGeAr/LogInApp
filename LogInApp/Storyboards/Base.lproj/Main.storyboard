@@ -251,20 +251,13 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6Eg-SI-hDM">
-                                <rect key="frame" x="16" y="251" width="288" height="234"/>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0pr-4b-FK6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="0pr-4b-FK6" firstAttribute="trailing" secondItem="6Eg-SI-hDM" secondAttribute="trailing" constant="16" id="JB5-oh-53q"/>
-                            <constraint firstItem="0pr-4b-FK6" firstAttribute="bottom" secondItem="6Eg-SI-hDM" secondAttribute="bottom" constant="34" id="Kgd-Ot-gBT"/>
                             <constraint firstItem="0pr-4b-FK6" firstAttribute="trailing" secondItem="qV6-b2-YLr" secondAttribute="trailing" constant="16" id="awp-u9-IPJ"/>
-                            <constraint firstItem="6Eg-SI-hDM" firstAttribute="leading" secondItem="0pr-4b-FK6" secondAttribute="leading" constant="16" id="bWN-Xc-Ata"/>
                             <constraint firstItem="qV6-b2-YLr" firstAttribute="leading" secondItem="0pr-4b-FK6" secondAttribute="leading" constant="16" id="fLs-3Y-DoF"/>
                             <constraint firstItem="qV6-b2-YLr" firstAttribute="top" secondItem="0pr-4b-FK6" secondAttribute="top" constant="20" id="mXc-ob-0q8"/>
-                            <constraint firstItem="6Eg-SI-hDM" firstAttribute="top" secondItem="qV6-b2-YLr" secondAttribute="bottom" constant="20" id="wFr-Vo-fPF"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="3xw-Qo-UDh">
@@ -279,7 +272,6 @@
                         <outlet property="cityTF" destination="LbH-Gr-p9b" id="3hd-8p-Anz"/>
                         <outlet property="nameTF" destination="AcM-7I-Cxc" id="EHu-RH-aEN"/>
                         <outlet property="personalInformationTF" destination="5mF-b4-HpX" id="oJk-44-Fa5"/>
-                        <outlet property="photoImage" destination="6Eg-SI-hDM" id="ANh-kD-CFS"/>
                         <outlet property="surnameTF" destination="tgT-lc-dSj" id="eFk-Qx-hll"/>
                     </connections>
                 </viewController>
@@ -294,14 +286,28 @@
                     <view key="view" contentMode="scaleToFill" id="5kb-0z-fED">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fvs-Wa-Zyp">
+                                <rect key="frame" x="16" y="44" width="288" height="504"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="F8c-bd-e5N"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="F8c-bd-e5N" firstAttribute="trailing" secondItem="fvs-Wa-Zyp" secondAttribute="trailing" constant="16" id="4R5-Q6-OcM"/>
+                            <constraint firstAttribute="bottom" secondItem="fvs-Wa-Zyp" secondAttribute="bottom" constant="20" id="4RI-IG-K8s"/>
+                            <constraint firstItem="fvs-Wa-Zyp" firstAttribute="top" secondItem="F8c-bd-e5N" secondAttribute="top" id="E28-2F-Ci1"/>
+                            <constraint firstItem="fvs-Wa-Zyp" firstAttribute="leading" secondItem="F8c-bd-e5N" secondAttribute="leading" constant="16" id="vy2-qA-0HS"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="j3l-OV-S7P"/>
+                    <connections>
+                        <outlet property="photoView" destination="fvs-Wa-Zyp" id="Nex-yZ-b3K"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bjm-1X-YMB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2735" y="887"/>
+            <point key="canvasLocation" x="2733.75" y="886.26760563380287"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="JTL-lq-gAX">

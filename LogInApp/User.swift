@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 struct User {
     let userName: String
@@ -19,7 +20,7 @@ struct Person {
     let age: Int
     let city: String
     let information: String
-//    let photo: UIImage
+    let photo: UIImage
 }
 
 let german = Person(
@@ -27,6 +28,6 @@ let german = Person(
     surname: "Stavitskiy",
     age: 30,
     city: "Moscow",
-    information: "I think you know everything about me."
-//    photo: UIImage(named: "togetherPhoto")!
+    information: "I think you know everything about me.",
+    photo: UIImage(named: "togetherPhoto")!
 )

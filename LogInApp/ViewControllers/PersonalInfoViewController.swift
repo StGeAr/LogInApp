@@ -16,15 +16,13 @@ class PersonalInfoViewController: UIViewController {
     @IBOutlet var cityTF: UILabel!
     @IBOutlet var personalInformationTF: UILabel!
     
-    @IBOutlet var photoImage: UIImageView!
-    
     // MARK: - Properties
     var userName = ""
     var userSurname = ""
     var userAge: Int = 0
     var userCity = ""
     var userInformation = ""
-    let userPhoto = UIImage(named: "togetherPhoto")
+    var userPhoto: UIImage?
     
     // MARK: - View
     override func viewDidLoad() {
@@ -34,13 +32,12 @@ class PersonalInfoViewController: UIViewController {
         ageTF.text = userAge != 0 ? String(userAge) : ""
         cityTF.text = userCity
         personalInformationTF.text = userInformation
-        photoImage.image = userPhoto
     }
     
     // MARK: - Navigation
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        guard let photoVC = segue.destination as? PhotoViewController else { return }
-//        photoVC.photo = userPhoto
-//    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let photoVC = segue.destination as? PhotoViewController else { return }
+        photoVC.photo = userPhoto
+    }
 
 }

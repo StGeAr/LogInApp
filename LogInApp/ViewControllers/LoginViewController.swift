@@ -30,6 +30,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                 personalInfoVC.userAge = german.age
                 personalInfoVC.userCity = german.city
                 personalInfoVC.userInformation = german.information
+                personalInfoVC.userPhoto = german.photo
             }
         }
     }

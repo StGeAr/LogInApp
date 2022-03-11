@@ -10,7 +10,7 @@ import UIKit
 class PhotoViewController: UIViewController {
 
     // MARK: - IBOutlets
-    @IBOutlet var userPhoto: UIImageView!
+    @IBOutlet var photoView: UIImageView!
     
     // MARK: - Properties
     var photo: UIImage?
@@ -18,7 +18,7 @@ class PhotoViewController: UIViewController {
     // MARK: - View
     override func viewDidLoad() {
         super.viewDidLoad()
-        userPhoto.image = photo
+        photoView.image = photo
     }
 
 }
