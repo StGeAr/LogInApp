@@ -34,7 +34,7 @@ class PersonalInfoViewController: UIViewController {
         ageTF.text = userAge != 0 ? String(userAge) : ""
         cityTF.text = userCity
         personalInformationTF.text = userInformation
-        
+        photoImage.image = userPhoto
     }
     
     // MARK: - Navigation
