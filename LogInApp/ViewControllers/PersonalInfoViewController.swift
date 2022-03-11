@@ -41,3 +41,10 @@ class PersonalInfoViewController: UIViewController {
     }
 
 }
+
+//// MARK: - TabBar
+//extension WelcomeViewController {
+//    func setupTabBar() {
+//        tabBarItem.title = "Jopa"
+//    }
+//}

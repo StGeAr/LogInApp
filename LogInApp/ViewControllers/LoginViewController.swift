@@ -31,19 +31,20 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                 personalInfoVC.userCity = german.city
                 personalInfoVC.userInformation = german.information
                 personalInfoVC.userPhoto = german.photo
+                personalInfoVC.title = "\(german.name) \(german.surname)"
             }
         }
     }
     
     // MARK: IBActions
     @IBAction func loginButtonPressed() {
-//        guard userNameField.text == user.userName, passwordField.text == user.password else {
-//            showAlert(
-//                title: "Invalid login or password",
-//                message: "Please, enter correct login and password"
-//            )
-//            return
-//        }
+        guard userNameTF.text == user.userName, passwordTF.text == user.password else {
+            showAlert(
+                title: "Invalid login or password",
+                message: "Please, enter correct login and password"
+            )
+            return
+        }
         performSegue(withIdentifier: "logIn", sender: nil)
     }
     
