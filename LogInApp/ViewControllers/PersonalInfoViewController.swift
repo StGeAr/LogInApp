@@ -35,7 +35,6 @@ class PersonalInfoViewController: UIViewController {
         cityTF.text = userCity
         personalInformationTF.text = userInformation
         
-//        photoImage.image = userPhoto
     }
     
     // MARK: - Navigation

@@ -10,8 +10,8 @@ import UIKit
 class LoginViewController: UIViewController, UITextFieldDelegate {
 
     // MARK: - IBOutlets
-    @IBOutlet var userNameField: UITextField!
-    @IBOutlet var passwordField: UITextField!
+    @IBOutlet var userNameTF: UITextField!
+    @IBOutlet var passwordTF: UITextField!
     
     // MARK: - Private properties
     private let user = User(userName: "User", password: "pass", person: german)
@@ -47,8 +47,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func unwind(for segue: UIStoryboardSegue) {
-        userNameField.text = ""
-        passwordField.text = ""
+        userNameTF.text = ""
+        passwordTF.text = ""
     }
 
     @IBAction func showAuthorizationData(_ sender: UIButton) {
@@ -67,7 +67,7 @@ extension LoginViewController {
             preferredStyle: .alert
         )
         let okAction = UIAlertAction(title: "OK", style: .default) { _ in
-            self.passwordField.text = ""
+            self.passwordTF.text = ""
         }
         alert.addAction(okAction)
         present(alert, animated: true)
@@ -82,8 +82,8 @@ extension LoginViewController {
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        if textField == userNameField {
-            passwordField.becomeFirstResponder()
+        if textField == userNameTF {
+            passwordTF.becomeFirstResponder()
         } else {
             loginButtonPressed()
         }

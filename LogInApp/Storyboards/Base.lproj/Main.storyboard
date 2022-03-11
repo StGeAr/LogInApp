@@ -86,8 +86,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="passwordField" destination="yTB-dr-6Ce" id="m8V-tF-Fp2"/>
-                        <outlet property="userNameField" destination="M1L-Mv-BYw" id="k5F-so-lQ0"/>
+                        <outlet property="passwordTF" destination="yTB-dr-6Ce" id="m8V-tF-Fp2"/>
+                        <outlet property="userNameTF" destination="M1L-Mv-BYw" id="k5F-so-lQ0"/>
                         <segue destination="5nF-Ad-yor" kind="presentation" identifier="logIn" modalPresentationStyle="fullScreen" id="MBS-mE-fD0"/>
                     </connections>
                 </viewController>
