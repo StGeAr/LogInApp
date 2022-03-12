@@ -39,7 +39,6 @@ class PersonalInfoViewController: UIViewController {
         guard let photoVC = segue.destination as? PhotoViewController else { return }
         photoVC.photo = userPhoto
     }
-
 }
 
 //// MARK: - TabBar
